@@ -1,119 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 	<head>
-		<title>Drew Smith</title>
-		<link rel="stylesheet" type="text/css" href="/css/jelly.css" />
-		<style type="text/css" media="screen">
-			body {
-				font-family: -apple-system; "Helvetica Neue", Helvetica, sans-serif; }
-				
-			.container {
-				display: flex;
-				flex-direction: column;
-				align-items: left;
-				justify-content: left;
-				background-color: none;
-				width: 80%;
-				margin: auto; }
-				
-			.footer {
-				padding-bottom: 0.4em;
-				margin-top: 30%; }
-				
-			.hirestatus a {
-				text-decoration: none;
-				color: white;
-				font-weight: 600; }
-				
-			.hirestatus {
-				padding: 8px 12px 8px 12px;
-				background-color: rgba(30, 210, 60, 1);
-				border-radius: 100px;
-				box-shadow: 0 2px 6px rgba(30, 210, 60, 0.5);
-				transition: 0.2s ease-in-out; }
-				
-			.hirestatus:hover {
-				background-color: rgba(30, 210, 60, 0.85);
-				box-shadow: 0 4px 12px rgba(30, 210, 60, 0.5);
-				transform: scale(1.05); }
-			
-			header {
-				width: 100%;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-between;
-				background-color: none;
-				margin-top: 15%;
-				margin-bottom: 0.25em;
-				padding: none; }
-				
-				hr { 
-    			display: block;
-    			margin-top: 2em;
-    			margin-bottom: 2em;
-    			margin-left: auto;
-    			margin-right: auto;
-    			border-style: solid;
-    			border-width: 1px;
-    			border-color: rgba(200, 200, 210, 1);
-    			width: 100%; }
-			
-			h1,h2,h3,h4 {
-				padding: 0;
-				margin: 0; }
-				
-			nav {
-    			width: 100%;
-    			display: flex;
-    			justify-content: space-between;
-    			flex-direction: row;
-    			background-color: none; }
+		
+<!-- Start of Meta/CEO -->
 
-			nav a {
-    			text-decoration: none;
-    			font-weight: 600;
-    			text-transform: uppercase;
-    			color: rgba(240, 10, 120, 1); }
-    			
-    		nav a:active {
-    			background-color: red;
-    		}
-				
-			h1 {
-				font-weight: 800;
-				font-size: 3em; }
-				
-			h2 {
-				font-size: 2em;
-				font-weight: 400; }
-				
-			@keyframes elastic { 
-			 
-			}
-		</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The website of Drew Smith, a designer and student from Perth, Australia.">
+		<meta name="keywords" content="Design,UI,UX,Perth,Australia,Drew,Smith,Developer">
+		<meta name="author" content="Drew Smith">
+		
+<!-- Start of Head Tags and CSS -->
+
+		<title>Hi, I'm Drew Smith</title>
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<link rel="stylesheet" type="text/css" href="typography.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+
 	</head>
 	<body>
-		<div class="container">
-		<header>
-			<h1>Drew Smith</h1> 		
-			<div class="hirestatus">
-				<a href="link">Currently available to hire.</a>
+		
+<!-- Start of Header -->
+	<main style="display:block;"> <!-- Compatibility pre-requisite. -->
+		<header class="head">
+			<div class="margins">
+			<nav role="navigation">
+				<a class="obj.item" href="link">Portfolio</a>
+				<a class="obj.item" href="link">Photography</a>
+				<a class="obj.item" href="link">Projects</a>
+				<a class="obj.item" href="link">Contact</a>
+				<a class="obj.item" href="link">Available to hire.</a>
+			</nav>
+
+			<div class="identity">
+				<h1>Hi, I’m Drew.</h1> 		
+				<h2>I’m a UI/UX & Graphics Designer at hammersmith.design and a current student at Curtin University in Perth.</h2>
+			</div>
 			</div>
 		</header>
-		<h2>UI/UX & Graphics Designer living in Perth, Australia. <br> 
-		Founder and freelance designer at Hammersmith.</h2>
-		<hr>
-		<nav>
-			<a href="link">Portfolio</a>
-			<a href="link">Photography</a>
-			<a href="link">Projects</a>
-			<a href="link">Contact</a>
-		</nav>
-		<section class="footer">
-			<strong>Designed with Love in Perth, Australia.</strong>
-			<em>Drew Smith 2017.</em>
+		
+<!-- Start of Body Section -->
+		<div class="margins">
+		<section class="photography panel">
+			<h4 class="obj.header">Photography</h4>
+			<div class="grid"> <!-- Will only work on newer browsers. for older devices, will use a simple layout with flex or tables. -->
+				<div class="row">
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/filey.jpeg" alt="Photo" width="100%"></div>
+					</div>
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/pigeon.jpeg" alt="Photo" width="100%"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/swallows.jpeg" alt="Photo" width="100%"></div>
+					</div>
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/toffee.jpeg" alt="Photo" width="100%"></div>
+					</div>
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/angelica.jpeg" alt="Photo" width="100%"></div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		
+		<section class="design panel">
+			<h4 class="obj.header">Design Work</h4>
+			<div class="grid">
+				<div class="row">
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/swallows.jpeg" alt="Photo" width="100%"></div>
+					</div>
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/snail.jpeg" alt="Photo" width="100%"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/toffee.jpeg" alt="Photo" width="100%"></div>
+					</div>
+					<div class="block obj.item">
+						<div class="obj.image"><img src="assets/photographs/pigeon.jpeg" alt="Photo" width="100%"></div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		
+		<section class="about panel">
+			<h4 class="obj.header">Me</h4>
+			<div class="row">
+				<div class="block obj.item">
+					<h5>This Week</h5>
+					<table class="health font.tabular">
+						<tr>
+							<td><h3><em>5.12km</em></h3></td>
+							<td>Walking Distance</td>
+						</tr>
+						<tr>
+							<td><h3><em>1.10km</em></h3></td>
+							<td>Jogging Distance</td>
+						</tr>
+						<tr>
+							<td><h3><em>0.66km</em></h3></td>
+							<td>Cycling Distance</td>
+						</tr>
+					</table>
+					<small>Data accessed through Moves App.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="block obj.item">
+					<h5>Twitter</h5>
+					<div class="tweet obj.list">
+						<em>@drwsmth</em>
+						What time is it in London?
+						I’m having a really hard time waking up lately.
+						<small><time>5:24am</time></small>
+					</div>
+					<div class="tweet obj.list">
+						<em>@drwsmth</em>
+						What time is it in London?
+						I’m having a really hard time waking up lately.
+						<small><time>5:24am</time></small>
+					</div>
+					<div class="tweet obj.list">
+						<em>@drwsmth</em>
+						What time is it in London?
+						I’m having a really hard time waking up lately.
+						<small><time>5:24am</time></small>
+					</div>
+					<div class="tweet obj.list">
+						<em>@drwsmth</em>
+						What time is it in London?
+						I’m having a really hard time waking up lately.
+						<small><time>5:24am</time></small>
+					</div>
+				</div>
+				
+				<div class="block obj.item">
+					<h5>Medium</h5>
+					<div class="mediumpost obj.list">
+						<em>The journey to Lake Tahoe</em>
+						<p>A journal of adventure.</p>
+						<small>12 Minutes Reading Time,<time>Posted at 5:24am</time></small>
+					</div>
+					<div class="mediumpost obj.list">
+						<em>Learning how to code</em>
+						<p>A designers experience jumping into JS and SASS.</p>
+						<small>12 Minutes Reading Time,<time>Posted at 5:24am</time></small>
+					</div>
+					<div class="mediumpost obj.list">
+						<em>”Mad Men” and the golden age of television</em>
+						<p>A look into the greatest shows on TV.</p>
+						<small>12 Minutes Reading Time,<time>Posted at 5:24am</time></small>
+					</div>
+					<div class="mediumpost obj.list">
+						<em>Design for MacOS</em>
+						<p>How to design apps and software for the Mac platform.</p>
+						<small>12 Minutes Reading Time,<time>Posted at 5:24am</time></small>
+					</div>
+				</div>
 		</section>
 		</div>
+		
+	</main>
+
+
+<!-- Start of Footer -->
+
+		<footer>
+			<small>
+			<strong>Designed with Love in Perth, Australia.</strong>
+			<p>Drew Smith 2017.</p>
+			</small>
+		</footer>
+
+<!-- Start of Javascript Load -->
 	</body>
 </html>
