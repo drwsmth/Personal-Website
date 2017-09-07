@@ -1,0 +1,329 @@
+/* Experimental Feature » Defining color scheme with CS4 variables. */
+
+/*
+:root {
+    --vivid: #17BEBB;
+    --emphasis: #F2545B;
+    --primary: #222728;
+    --secondary: #6C756B;
+    --subtle: #EAEAEA;
+}
+*/
+
+:root {
+    --vivid: #64ee5;
+    --emphasis: #d1315b;
+    --primary: #343e3d;
+    --secondary: #34d1bf;
+    --subtle: #46b1c9;
+}
+
+/* Definitions for common objects */
+
+.obj\.item {
+	margin: 0 8px 0 8px;
+	float: left;
+}
+.obj\.item:first-child {
+	margin-left: 0;
+}
+.obj\.item:last-child {
+	margin-right: 0;
+}
+nav {
+	min-height: 44px;
+}
+nav .obj\.item {
+	text-decoration: none;
+}
+nav .obj\.item:last-child {
+	float: right;
+}
+
+/* Colour definitions for dark and dark mode objects */
+
+.style\.dark {
+	background-color: var(--primary);
+	color: white;
+}
+.style\.dark h2 {
+	color: var(--secondary);
+}
+.style\.dark em,
+.style\.dark strong,
+.style\.dark a,
+.style\.dark:link {
+	color: var(--vivid);
+}
+.style\.dark time,
+.style\.dark q,
+.style\.dark small,
+.style\.dark h5,
+.style\.dark:visited {
+    color: var(--secondary);
+}
+.style\.dark .head {
+}
+.style\.dark .obj\.list {
+	border-bottom: 1px solid var(--secondary);
+}
+.style\.dark .obj\.list:last-child {
+	border: 0;
+}
+.style\.dark .obj\.header {
+	border-bottom: 2px solid var(--secondary);
+}
+
+/* Colour definitions for light objects */
+
+.style\.light {
+	background-color: 0;
+	color: var(--primary);
+}
+.style\.light h2 {
+	color: var(--secondary);
+}
+.style\.light em,
+.style\.light strong,
+.style\.light a,
+.style\.light:link {
+	color: var(--emphasis);
+}
+.style\.light time,
+.style\.light q,
+.style\.light small,
+.style\.light h5,
+.style\.light:visited {
+	color: var(--secondary);
+}
+.style\.light .head {
+	background-color: var(--subtle);
+}
+.style\.light .obj\.list {
+	border-bottom: 1px solid var(--subtle);
+}
+.style\.light .obj\.list:last-child {
+	border: 0;
+}
+.style\.light .obj\.header {
+	border-bottom: 2px solid var(--subtle);
+}
+
+/* Animation Definitions */
+
+.head h1 {
+	-webkit-animation: fade 0.6s 0.5s ease-in-out both;
+}
+.head h2, .head nav {
+	-webkit-animation: fade 0.6s 1.5s ease-in-out both;
+}
+section {
+	-webkit-animation: fade 0.6s 1.5s ease-in-out both;
+}
+
+/* Typography Sizes */
+
+html {
+    font-size: 1em;
+}
+h1,h2,h3,h4 {
+    font-weight: inherit;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 2.074em;
+    font-weight: 500;
+}
+h2 {
+    font-size: 1.728em;
+    font-weight: 100;
+}
+h3 {
+    font-size: 1.44em;
+    font-weight: 500;
+}
+h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+h5 {
+	font-weight: bold;
+}
+small,.font_small {
+    font-size: 0.833em;
+}
+em {
+	font-weight: 700;
+}
+a {
+	font-weight: 500;
+}
+/*  Typography and Tag Styling */
+
+body {
+    font-family: 'Retina', Helvetica, Arial, sans-serif;
+    line-height: 1.45;
+    font-kerning: normal;
+}
+footer {
+	width: 100%;
+	min-height: 160px;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+q {
+    opacity: 0.8;
+    font-style: italic;
+}
+time {
+    font-feature-settings: "tnum";
+    font-weight: 600;
+}
+
+/* Header Styling */
+
+.head {
+	height: auto;
+	width: 100%;
+	margin: 0 0 2em 0;
+	padding: 1.5em 0 2em 0;
+}
+
+/* Panel Styling */
+
+section {
+	width: 100%;
+}
+section h4 {
+	padding-bottom: 8px;
+	margin-bottom: 1em;
+}
+.grid {
+	display: flex;
+	flex-direction: column;
+}
+.panel, .identity, nav {
+	margin: auto;
+	max-width: 800px;
+	margin-bottom: 2em;
+}
+.row  {
+	display: flex;
+	margin-bottom: 8px;
+	justify-content: center;
+}
+.row:last-child {
+	margin-bottom: 0;
+}
+.block {
+	min-width: 80px;
+	width: 100%;
+	background: 0;
+}
+.obj\.image {
+	width: 100%;
+	height: 100%;
+}
+.obj\.image:after {
+}
+.obj\.image img {
+	border-radius: 8px;
+}
+/* Tweet Styling */
+
+.tweet, .mediumpost {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+}
+.tweet em {
+}
+.tweet time {
+	display: block;
+}
+.mediumpost em {
+	display: block;
+}
+.mediumpost small {
+	display: block;
+}
+.mediumpost time {
+	margin-left: 4px;
+}
+.health h3, .health h5 {
+}
+.health td:nth-of-type(2) {
+	padding-left: 8px;
+}
+
+/* Other Styling */
+
+.margins {
+	margin: 0 2em 0 2em;
+}
+
+details {}
+
+/* Animation CSS Definitions */
+
+@keyframes pop { 
+  0% {opacity:0; transform: scale(0.0);}
+  60% {opacity:1; transform: scale(1.10);}
+  90% {opacity:1; transform: scale(0.98);}
+  100% {opacity:1; transform: scale(1);} 
+}
+
+@keyframes fade-in { 
+  0% {opacity:0; transform: scale(0.8);}
+  100% {opacity:1; transform: scale(1);} 
+}
+
+@keyframes fade { 
+  0% {opacity:0;}
+  100% {opacity:1;} 
+}
+
+/* Mobile breakpoint #1, iPads and Tablets */
+
+@media only screen 
+  and (max-width: 320px) {
+
+h1,h2,h3,h4  {
+	line-height: 1.5em;
+}  	
+.obj\.item {
+	margin: 0;
+	margin-bottom: 16px;
+}
+.obj\.item:first-child {
+	margin-left: 0;
+}
+.obj\.item:last-child {
+	margin-right: 0;
+}
+nav {
+	min-height: 44px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+nav .obj\.item {
+	text-decoration: none;
+	margin: 0 8px 0 8px;
+}
+.row {
+	display: block;
+	margin-bottom: 0;
+}
+.margins {
+	margin: 0 1em 0 1em;
+}
+footer {
+}
+.head {
+	margin: 0 0 1em 0;
+	padding: 1.5em 0 2em 0;
+}
+  
+  
+  }
