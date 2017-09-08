@@ -1,47 +1,34 @@
 /* Experimental Feature » Defining color scheme with CS4 variables. */
 
-/*
 :root {
-    --vivid: #17BEBB;
-    --emphasis: #F2545B;
-    --primary: #222728;
-    --secondary: #6C756B;
-    --subtle: #EAEAEA;
-}
-*/
+	--text: #4c4d4c;
+	--subtext: #7f7f76;
+	--divider: #cecebf;	
+	--cherry: #ff5579;
+	--tangerine: #e7723a;
+	--royalblue: #4a6cff; }
 
-/*
-:root {
-    --black: rgba(52,62,61,1);
-    --grey: rgba(52,62,61,0.5);
-    --lightgrey: rgba(52,62,61,0.2);
-    --white: rgba(255,255,255,1);
-    
-    --primary: rgba(1,22,39,1);
-    --secondary: rgba(22,78,229,1);
-    --tertiary: rgba(153,225,207,1);
-    --emphasis: rgba(247,23,53,1);
-}
-*/
-
-:root {
---text: #363C3D;
---background: rgba(220,240,250,1);
---divider: #CDD2D3;
-
---mint: #7E8C85;
---aqua: #00B8C1;
---alert: #FF673D;
-
-
-}
+	body { background-color: 0; color: var(--text); }
+	h1,h2,h3,h4,h5,p { color: var(--text); }
+	small { color: var(--subtext); }
+	strong,em,a { color: var(--tangerine);}
+/* 	---------- */
+	.head a:link, .head a:visited { color: var(--subtext); }
+	.head .obj\.heading { color: var(--text); }
+	.head .obj\.subheading { color: var(--tangerine); }
+/* 	---------- */
+	.obj\.list { border-bottom: 1px solid var(--divider); }
+	.obj\.list:last-child { border: 0; }
+	.obj\.header { border-bottom: 2px solid var(--divider); }
+/* 	---------- */
+	
 
 /* Definitions for common objects */
 
 .obj\.item {
 	margin: 0 8px 0 8px;
-	float: left;
 }
+
 .obj\.item:first-child {
 	margin-left: 0;
 }
@@ -50,80 +37,54 @@
 }
 nav {
 	min-height: 44px;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 nav .obj\.item {
-	text-decoration: none;
+	text-decoration: none;	
 }
-nav .obj\.item:last-child {
-	float: right;
+nav .obj\.item:first-child {
+	margin-right: auto;
 }
-
-
-/* Colour definitions for light objects */
-
-body {
-	background-color: 0;
-	color: var(--text);
+nav .obj\.item img {
+	max-height: 44px;
+	max-width: 44px;
+	vertical-align: middle;
 }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
-h2 {
-	color: var(--mint);
-}
-em,strong,a {
-	color: var(--aqua);
-}
-time,q,small {
-	color: var(--mint);
-}
-
-.head {
-	background-color: var(--background);
-}
-.obj\.list {
-	border-bottom: 1px solid var(--divider);
-}
-.obj\.list:last-child {
-	border: 0;
-}
-.obj\.header {
-	border-bottom: 2px solid var(--divider);
-}
 
 /* Animation Definitions */
 
-.head h1 {
+/*
+.head .obj\.heading {
 	-webkit-animation: fade 0.6s 0.5s ease-in-out both;
 }
-.head h2, .head nav {
+.head .obj\.subheading, .head nav {
 	-webkit-animation: fade 0.6s 1.5s ease-in-out both;
 }
 section {
 	-webkit-animation: fade 0.6s 1.5s ease-in-out both;
 }
+*/
 
 /* Typography Sizes */
 
 html {
     font-size: 1em;
 }
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5 {
     font-weight: inherit;
     line-height: 1.2;
 }
 h1 {
     font-size: 2.074em;
     font-weight: 500;
+    line-height: 1.5;
 }
 h2 {
     font-size: 1.728em;
-    font-weight: 100;
+    font-weight: 300;
 }
 h3 {
     font-size: 1.44em;
@@ -136,7 +97,7 @@ h4 {
 h5 {
 	font-weight: bold;
 }
-small,.font_small {
+small {
     font-size: 0.833em;
 }
 em {
@@ -149,15 +110,19 @@ a {
 
 body {
     font-family: 'Retina', Helvetica, Arial, sans-serif;
-    line-height: 1.45;
+    line-height: 1.5;
     font-kerning: normal;
 }
+
 footer {
 	width: 100%;
 	min-height: 160px;
 	padding-bottom: 0.5em;
 	padding-top: 0.5em;
 	text-align: center;
+}
+p {
+	display: inline;
 }
 q {
     opacity: 0.8;
@@ -173,9 +138,13 @@ time {
 .head {
 	height: auto;
 	width: 100%;
-	margin: 0 0 2em 0;
+	margin: 0 0 0 0;
 	padding: 1.5em 0 2em 0;
 }
+.head .obj\.subheading { 
+	max-width: 600px;
+}
+
 
 /* Panel Styling */
 
@@ -212,6 +181,7 @@ section h4 {
 	width: 100%;
 	height: 100%;
 }
+
 .obj\.image:after {
 }
 .obj\.image img {

@@ -22,10 +22,7 @@ html {
 	-moz-font-feature-settings: "kern=1";
 }
 
-/* @import url('https://rsms.me/interface/interface.css'); */
-/* @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700'); */
-
-/* Retina — Webfont Load */
+@import url('https://rsms.me/interface/interface.css');
 
 @font-face {
   font-family: 'Retina';
