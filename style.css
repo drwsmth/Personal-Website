@@ -56,6 +56,15 @@ nav .obj\.item img {
 	max-width: 44px;
 	vertical-align: middle;
 }
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 
 
 /* Animation Definitions */
@@ -110,18 +119,12 @@ em {
 a {
 	font-weight: 500;
 	text-decoration: none;
+	border-bottom: 2px solid rgba(0,0,0,0);
 }
 
 a:hover {
-	text-decoration: underline;
+text-decoration: underline; 
 }
-/*
-a:hover { Experimental!
-	box-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 4px 8px rgba(0,0,0,0.2);
-	border-radius: 100px;
-	padding: 6px 12px 6px 12px;
-}
-*/
 
 
 /*  Typography and Tag Styling */
