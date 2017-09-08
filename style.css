@@ -84,34 +84,34 @@ section {
 /* Typography Sizes */
 
 html {
-    font-size: 1em;
+	font-size: 1em;
 }
 h1,h2,h3,h4,h5 {
-    font-weight: inherit;
-    line-height: 1.2;
+	font-weight: inherit;
+	line-height: 1.2;
 }
 h1 {
-    font-size: 2.074em;
-    font-weight: 500;
-    line-height: 1.5;
+	font-size: 2.074em;
+	font-weight: 500;
+	line-height: 1.5;
 }
 h2 {
-    font-size: 1.728em;
-    font-weight: 300;
+	font-size: 1.728em;
+	font-weight: 300;
 }
 h3 {
-    font-size: 1.44em;
-    font-weight: 500;
+	font-size: 1.44em;
+	font-weight: 500;
 }
 h4 {
-    font-size: 1.2em;
-    font-weight: 500;
+	font-size: 1.2em;
+	font-weight: 500;
 }
 h5 {
 	font-weight: bold;
 }
 small {
-    font-size: 0.833em;
+	font-size: 0.833em;
 }
 em {
 	font-weight: 700;
@@ -120,19 +120,34 @@ a {
 	font-weight: 500;
 	text-decoration: none;
 	border-bottom: 2px solid rgba(0,0,0,0);
+	position: relative;
 }
 
-a:hover {
-text-decoration: underline; 
+a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--divider);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.2s ease-in-out;
+}
+
+a:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
 }
 
 
-/*  Typography and Tag Styling */
+/*	Typography and Tag Styling */
 
 body {
-    font-family: 'Retina', Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-kerning: normal;
+	font-family: 'Retina', Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-kerning: normal;
 }
 
 footer {
@@ -146,12 +161,12 @@ p {
 	display: inline;
 }
 q {
-    opacity: 0.8;
-    font-style: italic;
+	opacity: 0.8;
+	font-style: italic;
 }
 time {
-    font-feature-settings: "tnum";
-    font-weight: 600;
+	font-feature-settings: "tnum";
+	font-weight: 600;
 }
 
 /* Header Styling */
@@ -266,7 +281,7 @@ details {}
 @media only screen 
   and (max-width: 320px) {
 
-h1,h2,h3,h4  {
+h1,h2,h3,h4	 {
 	line-height: 1.5em;
 }  	
 .obj\.item {
