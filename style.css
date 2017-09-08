@@ -6,22 +6,26 @@
 	--divider: #cecebf;	
 	--cherry: #ff5579;
 	--tangerine: #e7723a;
-	--royalblue: #4a6cff; }
+	--royalblue: #4a6cff;
+	--seagreen: #20a9cd; }
 
 	body { background-color: 0; color: var(--text); }
 	h1,h2,h3,h4,h5,p { color: var(--text); }
 	small { color: var(--subtext); }
-	strong,em,a { color: var(--tangerine);}
+	strong,em { color: var(--tangerine); }
+	a { color: var(--cherry); }
 /* 	---------- */
-	.head a:link, .head a:visited { color: var(--subtext); }
 	.head .obj\.heading { color: var(--text); }
-	.head .obj\.subheading { color: var(--tangerine); }
+	.head .obj\.subheading { color: var(--subtext); }
+	.head .obj\.subheading a:nth-of-type(1) { color: var(--cherry); }
+	.head .obj\.subheading a:nth-of-type(2) { color: var(--royalblue); }
+
 /* 	---------- */
 	.obj\.list { border-bottom: 1px solid var(--divider); }
 	.obj\.list:last-child { border: 0; }
 	.obj\.header { border-bottom: 2px solid var(--divider); }
 /* 	---------- */
-	
+	nav a:link, nav a:visited { color: var(--subtext); }
 
 /* Definitions for common objects */
 
@@ -105,7 +109,21 @@ em {
 }
 a {
 	font-weight: 500;
+	text-decoration: none;
 }
+
+a:hover {
+	text-decoration: underline;
+}
+/*
+a:hover { Experimental!
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 4px 8px rgba(0,0,0,0.2);
+	border-radius: 100px;
+	padding: 6px 12px 6px 12px;
+}
+*/
+
+
 /*  Typography and Tag Styling */
 
 body {
