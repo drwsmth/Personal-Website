@@ -99,11 +99,11 @@ h2 {
 	font-size: 1.728em;
 	font-weight: 300;
 }
-h3 {
+h3, th span {
 	font-size: 1.44em;
 	font-weight: 500;
 }
-h4 {
+h4, td span {
 	font-size: 1.2em;
 	font-weight: 500;
 }
@@ -181,7 +181,23 @@ time {
 	max-width: 600px;
 }
 
-
+table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+td, th {
+	padding-bottom: 8px;
+}
+th small {
+	display: block;
+}
+th:nth-child(3) span, td:nth-child(3)  {
+	font-weight: 200;
+}
+th:nth-child(1) span, td:nth-child(1) {
+	color: var(--tangerine);
+}
 /* Panel Styling */
 
 section {
@@ -214,15 +230,16 @@ section h4 {
 	background: 0;
 }
 .obj\.image {
-	width: 100%;
-	height: 100%;
+	display: block;
+	z-index: 0;
 }
-
 .obj\.image:after {
+
 }
 .obj\.image img {
 	border-radius: 8px;
 }
+
 /* Tweet Styling */
 
 .tweet, .mediumpost {
