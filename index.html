@@ -2,7 +2,7 @@
 <html lang="en-us">
 	<head>
 		
-<!-- Start of Meta/CEO -->
+<!-- Start of Meta/SEO -->
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,25 @@
 		<link rel="stylesheet" type="text/css" href="reset.css"/>
 		<link rel="stylesheet" type="text/css" href="typography.css"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>
+				var xmlHttp = new XMLHttpRequest();
+				var path = "https://api.spotify.com/v1/me/top/artists";
+				xmlHttp.onreadystatechange = function() { 
+				if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+				callback(xmlHttp.responseText);
+    		}
+				xmlHttp.open("GET", path, true); // true for asynchronous
+				xmlHttp.setRequestHeader("Accept", "application/json");
+				xmlHttp.setRequestHeader("Content-Type", "application/json");
+				xmlHttp.setRequestHeader("Accept-Encoding", "gzip, deflate, compress");
+				xmlHttp.setRequestHeader("Authorization", "Bearer BQDF-TlQegc27qiQm5xhFCWAOjGm_zY3WSGou5SHnG_lVYUHksCkJR5SY3sZ2eYXkMG_opLcE5UAYo-h7v3aL5LupVpMxd2WmSfBb86qILhtrs1RLiHL7X1LTyTHUC-A2m9ipoNo7XH-Gn-42FVf");
+				xmlHttp.send(null);
+		</script>
 
 	</head>
-	<body class="preload">
+	
 <!-- Start of Header -->
+
 	<main style="display:block;"> <!-- Compatibility pre-requisite. -->
 		<header class="head">
 			<div class="margins">
@@ -46,7 +61,7 @@
 		<div class="margins">
 			
 		<section class="design panel">
-			<h4 class="obj.header">Design Work</h4>
+			<h4 class="obj.heading">Design Work</h4>
 			<div class="grid">
 				<div class="row">
 					<div class="block obj.item">
@@ -76,7 +91,7 @@
 		</section>
 
 		<section class="photography panel">
-			<h4 class="obj.header">Photography</h4>
+			<h4 class="obj.heading">Photography</h4>
 			<div class="grid"> <!-- Will only work on newer browsers. for older devices, will use a simple layout with flex or tables. -->
 				<div class="row">
 					<div class="block obj.item">
@@ -121,7 +136,8 @@
 		</section>
 				
 		<section class="about panel">
-			<h4 class="obj.header">Me</h4>
+			<div id="demo"></div>
+			<h4 class="obj.heading">Me</h4>
 			<div class="row">
 				<div class="block obj.item">
 					<table class="music font.tabular">					

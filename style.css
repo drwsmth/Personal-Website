@@ -23,7 +23,7 @@
 /* 	---------- */
 	.obj\.list { border-bottom: 1px solid var(--divider); }
 	.obj\.list:last-child { border: 0; }
-	.obj\.header { border-bottom: 2px solid var(--divider); }
+	section .obj\.heading { border-bottom: 2px solid var(--divider); }
 /* 	---------- */
 	nav a:link, nav a:visited { color: var(--subtext); }
 
