@@ -7,6 +7,7 @@
 	--cherry: #ff5579;
 	--tangerine: #e7723a;
 	--royalblue: #4a6cff;
+	--seagreenlight: rgba(32, 169, 205, 0.05);
 	--seagreen: #20a9cd; }
 	
 /* Styling begins below. */
@@ -101,11 +102,11 @@ h2 {
 	font-size: 1.728em;
 	font-weight: 300;
 }
-h3, th span {
+h3 {
 	font-size: 1.44em;
 	font-weight: 500;
 }
-h4, td span {
+h4 {
 	font-size: 1.2em;
 	font-weight: 500;
 }
@@ -115,6 +116,10 @@ h5 {
 }
 small {
 	font-size: 0.833em;
+}
+span {
+	font-size: 1.728em;
+	font-weight: 200;
 }
 em {
 	font-weight: 700;
@@ -185,37 +190,12 @@ time {
 	max-width: 600px;
 }
 
-table {
-	border-collapse: collapse;
-	text-align: left;
-	width: 100%;
-	background-color: rgba(0,0,0,0.05);
-	border-radius: 8px;
-	margin-bottom: 16px;
-}
-td, th {
-	padding: 8px;
-}
-th small {
-	display: block;
-}
-th:nth-child(3), td:nth-child(3)  {
-	font-weight: 500;
-	text-align: right;
-}
-th:nth-child(1), td:nth-child(1) {
-	color: var(--tangerine);
-}
-
-thead:first-of-type {
-	border-bottom: 1px solid var(--divider);
-}
 /* Panel Styling */
 
 section {
 	width: 100%;
 }
-section h4 {
+section .obj\.heading {
 	padding-bottom: 12px;
 	margin-bottom: 1em;
 }
@@ -252,10 +232,38 @@ section h4 {
 	border-radius: 8px;
 }
 
+
 .obj\.heading img {
 	vertical-align: middle;
 	margin-right: 6px;
 	opacity: 0.50;
+}
+
+/* Table Styling */
+
+table {
+	text-align: left;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+table td div {
+	background-color: var(--seagreenlight);
+	min-height: 200px;
+	border-radius: 24px;
+	padding: 12px;
+}
+
+table td button {
+	display: inline;
+}
+
+table td, table th {
+	padding: 12px;
+}
+
+table small {
+	display: block;
 }
 
 /* Tweet Styling */
@@ -353,5 +361,4 @@ footer {
 	padding: 1.5em 0 2em 0;
 }
   
-  
-  }
+}
