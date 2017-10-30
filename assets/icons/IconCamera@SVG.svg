@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45292) - http://www.bohemiancoding.com/sketch -->
+    <title>IconCamera@SVG</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Icon-Development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IconCamera" stroke-width="4" stroke="#000000">
+            <g id="Camera-Icon" transform="translate(0.000000, 2.000000)">
+                <g id="Group">
+                    <path d="M5.5,7 L8.32296704,7 L8.32296704,7 C8.73187163,7 9.09958038,6.75104906 9.25144373,6.37139068 L10,4.5 L10,4.5 C10.6039656,2.99008611 12.0663554,2 13.6925824,2 L18.3074176,2 L18.3074176,2 C19.9336446,2 21.3960344,2.99008611 22,4.5 L22.7485563,6.37139068 L22.7485563,6.37139068 C22.9004196,6.75104906 23.2681284,7 23.677033,7 L26.5,7 L26.5,7 C28.4329966,7 30,8.56700338 30,10.5 L30,22 L30,22 C30,24.209139 28.209139,26 26,26 L6,26 L6,26 C3.790861,26 2,24.209139 2,22 L2,10.5 L2,10.5 C2,8.56700338 3.56700338,7 5.5,7 Z" id="Rectangle-2"></path>
+                </g>
+                <circle id="Oval-4" cx="16" cy="14" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

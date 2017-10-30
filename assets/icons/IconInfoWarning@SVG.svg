@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45292) - http://www.bohemiancoding.com/sketch -->
+    <title>IconInfoWarning@SVG</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Icon-Development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IconInfoWarning">
+            <g id="Info-Warning-Icon" transform="translate(4.000000, 6.000000)">
+                <path d="M15.5119473,0.261294933 L24.9491911,17.5634802 C25.7425591,19.0180362 25.2065603,20.8403387 23.7520043,21.6337067 C23.3113475,21.874057 22.8174273,22 22.3154845,22 L1.68456883,22 C0.027714584,22 -1.31543117,20.6568542 -1.31543117,19 C-1.31543117,18.4980289 -1.18947397,18.0040819 -0.949097938,17.563407 L8.48878267,0.261197414 C9.54666052,-1.67818124 11.976417,-2.39277885 13.9157957,-1.334901 C14.5900566,-0.967110141 15.1441751,-0.41297625 15.5119473,0.261294933 Z" id="Rectangle-3" stroke="#070707" stroke-width="4"></path>
+                <rect id="Rectangle" fill="#000000" x="10" y="9" width="4" height="10" rx="2"></rect>
+                <circle id="Oval-3" fill="#000000" cx="12" cy="5" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

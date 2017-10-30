@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45292) - http://www.bohemiancoding.com/sketch -->
+    <title>IconLink@SVG</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Icon-Development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IconLink">
+            <g id="Link-Icon" transform="translate(0.000000, 2.000000)">
+                <path d="M29,1 L12,18" id="Line-2" stroke="#000000" stroke-width="4" stroke-linecap="round"></path>
+                <polyline id="Line" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="16 0 30 0 30 14"></polyline>
+                <circle id="Oval-5" fill="#000000" cx="2" cy="28" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

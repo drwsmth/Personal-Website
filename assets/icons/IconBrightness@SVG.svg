@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45292) - http://www.bohemiancoding.com/sketch -->
+    <title>IconBrightness@SVG</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Icon-Development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IconBrightness" stroke-width="4" stroke="#000000">
+            <g id="Brightness-Icon" transform="translate(0.000000, -1.000000)">
+                <path d="M29.3499073,23.0162549 C22.6799403,25.6305674 16.9722864,24.8007135 12.5857864,20.4142136 C8.1978506,16.0262777 7.36890957,10.3164025 9.9862556,3.64364195 C4.58492034,6.29489583 2,10.3374648 2,16 C2,24.478312 8.52055127,31 17,31 C22.6524435,31 26.6932984,28.4159548 29.3499073,23.0162549 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

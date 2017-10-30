@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45292) - http://www.bohemiancoding.com/sketch -->
+    <title>IconDownload@SVG</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Icon-Development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IconDownload">
+            <g id="Download-Icon">
+                <rect id="Rectangle-3" stroke="#070707" stroke-width="4" x="2" y="2" width="28" height="28" rx="10"></rect>
+                <rect id="Rectangle" fill="#000000" x="14" y="0" width="4" height="20" rx="2"></rect>
+                <polyline id="Line" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="10 12 16 18 22 12"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
