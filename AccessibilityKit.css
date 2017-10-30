@@ -1,0 +1,66 @@
+/* Experimental Feature » Reduced Motion Query */
+
+@media (prefers-reduced-motion) {
+	section,
+	.container,
+	.background,
+	.background:before,
+	.background:after {
+		-webkit-animation: 0;
+		-moz-animation: 0;
+		-o-animation: 0;
+		-ms-animation: 0;
+		animation: 0;
+	}
+}
+	
+/* Experimental Feature » Night Mode (Inverted) */
+
+	
+/* Experimental Feature » Microsoft Edge High-Contrast W/B  */
+
+@media screen and (-ms-high-contrast: white-on-black) {
+	html,
+	body {
+		color: white !important;
+		background-color: black !important;
+	}
+	h1,h2,h3,h4,h5 {
+		color: white;
+	}
+	hr {
+		border: 1px solid white;
+	}
+	html {
+		-webkit-animation: 0;
+		-moz-animation: 0;
+		-o-animation: 0;
+		-ms-animation: 0;
+		animation: 0;
+		background-color: black;
+	}
+}
+	
+/* Experimental Feature » Microsoft Edge High-Contrast B/W  */
+
+@media screen and (-ms-high-contrast: black-on-white) {
+	html,
+	body {
+		color: black !important;
+		background-color: white !important;
+	}
+	h1,h2,h3,h4,h5 {
+		color: black;
+	}
+	hr {
+		border: 1px solid black;
+	}
+	html {
+		-webkit-animation: 0;
+		-moz-animation: 0;
+		-o-animation: 0;
+		-ms-animation: 0;
+		animation: 0;
+		background-color: white;
+	}
+}

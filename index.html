@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		
+
 <!-- Start of Meta/SEO -->
 
 		<meta charset="utf-8">
@@ -9,30 +9,31 @@
 		<meta name="description" content="The website of Drew Smith, a designer and student from Perth, Australia.">
 		<meta name="keywords" content="Design,UI,UX,Perth,Australia,Drew,Smith,Developer">
 		<meta name="author" content="Drew Smith">
-		
+
 <!-- Start of Head Tags and CSS -->
 
 		<title>Hi, I'm Drew Smith</title>
 		<link rel="stylesheet" type="text/css" href="reset.css"/>
 		<link rel="stylesheet" type="text/css" href="typography.css"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script>
+	<!--	<script>
 				var xmlHttp = new XMLHttpRequest();
 				var path = "https://api.spotify.com/v1/me/top/artists";
-				xmlHttp.onreadystatechange = function() { 
-				if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-				callback(xmlHttp.responseText);
-    		}
+				xmlHttp.onreadystatechange = function() {
+					if (xmlHttp.readyState==4)
+						{
+						//alert the user that a response now exists in the responseTest property.
+						alert(xmlHttp.responseText);
+						console.log('xhr',xmlHttp)
+						}
+    			}
 				xmlHttp.open("GET", path, true); // true for asynchronous
-				xmlHttp.setRequestHeader("Accept", "application/json");
-				xmlHttp.setRequestHeader("Content-Type", "application/json");
-				xmlHttp.setRequestHeader("Accept-Encoding", "gzip, deflate, compress");
-				xmlHttp.setRequestHeader("Authorization", "Bearer BQDF-TlQegc27qiQm5xhFCWAOjGm_zY3WSGou5SHnG_lVYUHksCkJR5SY3sZ2eYXkMG_opLcE5UAYo-h7v3aL5LupVpMxd2WmSfBb86qILhtrs1RLiHL7X1LTyTHUC-A2m9ipoNo7XH-Gn-42FVf");
+				xmlHttp.setRequestHeader("Authorization", "Bearer BQCKqmVO0Tt1El14hX52kRSFxZ19Jg9cOUcMLfjq0ZtU4yEI9tTbXNQr6Wnzp6S68PTE-kYfXJ8qc3ZhLcVPdqYoVVmq_BM-1qE1kKwIN08cdoHv69JtQa274gESr4K94ADxjzsvGe6yoX6W");
 				xmlHttp.send(null);
-		</script>
+		</script> -->
 
 	</head>
-	
+
 <!-- Start of Header -->
 
 	<main style="display:block;"> <!-- Compatibility pre-requisite. -->
@@ -47,7 +48,7 @@
 			</nav>
 
 			<div class="identity">
-				<h1 class="obj.heading">Hi, I’m Drew.</h1> 		
+				<h1 class="obj.heading">Hi, I’m Drew.</h1>
 				<h2 class="obj.subheading">
 					I’m a UI/UX & Graphics Designer at
 					<a href="link">hammersmith.design</a>
@@ -57,11 +58,21 @@
 			</div>
 			</div>
 		</header>
-		
+
 		<div class="margins">
-			
+
 		<section class="design panel">
-			<h4 class="obj.heading">Design Work</h4>
+			<h4 class="obj.heading">
+				<picture>
+                    <source srcset=
+                    "assets/icons/IconArt.png, 
+                     assets/icons/IconArt@2x.png 2x, 
+                     assets/icons/IconArt@3x.png 3x"
+                     >
+                    <img src="assets/icons/IconArt@3x.png" alt="Design Work">
+                 <picture>
+				Design Work
+			</h4>
 			<div class="grid">
 				<div class="row">
 					<div class="block obj.item">
@@ -87,12 +98,21 @@
 						<div class="obj.image"><img src="assets/iphoneos.png" alt="Photo" width="100%"></div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</section>
 
 		<section class="photography panel">
-			<h4 class="obj.heading">Photography</h4>
-			<div class="grid"> <!-- Will only work on newer browsers. for older devices, will use a simple layout with flex or tables. -->
+			<h4 class="obj.heading">
+				<picture>
+                    <source srcset=
+                    "assets/icons/IconCamera.png, 
+                     assets/icons/IconCamera@2x.png 2x, 
+                     assets/icons/IconCamera@3x.png 3x"
+                     >
+                    <img src="assets/icons/IconCamera@3x.png" alt="Photography">
+                 <picture>
+				Photography
+			</h4>			<div class="grid"> <!-- Will only work on newer browsers. for older devices, will use a simple layout with flex or tables. -->
 				<div class="row">
 					<div class="block obj.item">
 						<div class="obj.image"><img src="assets/photographs/filey.jpeg" alt="Photo" width="100%">
@@ -132,27 +152,38 @@
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</section>
-				
+
 		<section class="about panel">
 			<div id="demo"></div>
-			<h4 class="obj.heading">Me</h4>
+			<h4 class="obj.heading">
+				<picture>
+                    <source srcset=
+                    "assets/icons/IconHappy.png, 
+                     assets/icons/IconHappy@2x.png 2x, 
+                     assets/icons/IconHappy@3x.png 3x"
+                     >
+                    <img src="assets/icons/IconHappy@3x.png" alt="About Me">
+                 <picture>
+				About Me
+			</h4>			
 			<div class="row">
 				<div class="block obj.item">
-					<table class="music font.tabular">					
+					<table class="music font.tabular">
 						<thead>
-							<h5>My Music</h5>
-							<tr>
-								<th colspan="1">
-									<span>All You Need Is Love</span>
-									<small>Latest Played Track</small>
-								</th>
-								<th colspan="1">
-									<span>The Beetles</span>
-								</th>
-								<th><span>1967</span></th>
-							</tr>
+						<tr>
+							<th>
+								<span>All You Need Is Love</span>
+								<small>Latest Played Track</small>
+							</th>
+							<th>
+								<span>The Beetles</span>
+							</th>
+							<th>
+								<span>1967</span>
+							</th>
+						</tr>
 						</thead>
 						<tr>
 							<td>
@@ -174,18 +205,17 @@
 							</td>
 							<td>Chainsmokers</td>
 							<td>2016</td>
-						</tr>					
+						</tr>
 					</table>
-					<small>Data accessed through Moves App.</small>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="block obj.item">
 					<h5>Twitter</h5>
 					<div class="twitter-block"></div>
 				</div>
-				
+
 				<div class="block obj.item">
 					<h5>Medium</h5>
 					<article class="mediumpost obj.list">
@@ -212,7 +242,7 @@
 			</div>
 		</section>
 		</div>
-		
+
 	</main>
 
 

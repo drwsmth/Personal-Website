@@ -8,6 +8,8 @@
 	--tangerine: #e7723a;
 	--royalblue: #4a6cff;
 	--seagreen: #20a9cd; }
+	
+/* Styling begins below. */
 
 	body { background-color: 0; color: var(--text); }
 	h1,h2,h3,h4,h5,p { color: var(--text); }
@@ -109,6 +111,7 @@ h4, td span {
 }
 h5 {
 	font-weight: bold;
+	margin-bottom: 8px;
 }
 small {
 	font-size: 0.833em;
@@ -145,9 +148,10 @@ a:hover:before {
 /*	Typography and Tag Styling */
 
 body {
-	font-family: 'Retina', Helvetica, Arial, sans-serif;
+	font-family: 'Retina', sans-serif;
 	line-height: 1.5;
 	font-kerning: normal;
+	fill: red;
 }
 
 footer {
@@ -185,18 +189,26 @@ table {
 	border-collapse: collapse;
 	text-align: left;
 	width: 100%;
+	background-color: rgba(0,0,0,0.05);
+	border-radius: 8px;
+	margin-bottom: 16px;
 }
 td, th {
-	padding-bottom: 8px;
+	padding: 8px;
 }
 th small {
 	display: block;
 }
-th:nth-child(3) span, td:nth-child(3)  {
-	font-weight: 200;
+th:nth-child(3), td:nth-child(3)  {
+	font-weight: 500;
+	text-align: right;
 }
-th:nth-child(1) span, td:nth-child(1) {
+th:nth-child(1), td:nth-child(1) {
 	color: var(--tangerine);
+}
+
+thead:first-of-type {
+	border-bottom: 1px solid var(--divider);
 }
 /* Panel Styling */
 
@@ -204,7 +216,7 @@ section {
 	width: 100%;
 }
 section h4 {
-	padding-bottom: 8px;
+	padding-bottom: 12px;
 	margin-bottom: 1em;
 }
 .grid {
@@ -240,6 +252,12 @@ section h4 {
 	border-radius: 8px;
 }
 
+.obj\.heading img {
+	vertical-align: middle;
+	margin-right: 6px;
+	opacity: 0.50;
+}
+
 /* Tweet Styling */
 
 .tweet, .mediumpost {
@@ -269,7 +287,7 @@ section h4 {
 /* Other Styling */
 
 .margins {
-	margin: 0 2em 0 2em;
+	margin: 0 4em 0 4em;
 }
 
 details {}

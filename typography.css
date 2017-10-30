@@ -1,5 +1,7 @@
 /* Experimental Feature » Font Settings */
 
+@import url('https://rsms.me/inter/inter-ui.css');
+
 .font\.tabular {
     font-feature-settings: "tnum";
 }
@@ -22,78 +24,43 @@ html {
 	-moz-font-feature-settings: "kern=1";
 }
 
-@import url('https://rsms.me/interface/interface.css');
-
 @font-face {
   font-family: 'Retina';
   font-weight: 700;
   font-style: normal;
-  src: url('fonts/Retina-BoldRoman.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Retina-BoldRoman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Retina-BoldRoman.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Retina-BoldRoman.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/Retina-BoldRoman.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('fonts/Retina-BoldRoman.eot');
+  src: url('fonts/Retina-BoldRoman.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Retina-BoldRoman.woff2') format('woff2'),
+       url('fonts/Retina-BoldRoman.woff') format('woff'),
+       url('fonts/Retina-BoldRoman.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'Retina';
   font-weight: 400;
   font-style: normal;
-  src: url('fonts/Retina-BookRoman.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Retina-BookRoman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Retina-BookRoman.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Retina-BookRoman.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/Retina-BookRoman.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('fonts/Retina-BookRoman.eot');
+  src: url('fonts/Retina-BookRoman.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Retina-BookRoman.woff2') format('woff2'),
+       url('fonts/Retina-BookRoman.woff') format('woff'),
+       url('fonts/Retina-BookRoman.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'Retina';
   font-weight: 200;
   font-style: normal;
-  src: url('fonts/Retina-LightRoman.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Retina-LightRoman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Retina-LightRoman.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Retina-LightRoman.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/Retina-LightRoman.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('fonts/Retina-LightRoman.eot');
+  src: url('fonts/Retina-LightRoman.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Retina-LightRoman.woff2') format('woff2'),
+       url('fonts/Retina-LightRoman.woff') format('woff'),
+       url('fonts/Retina-LightRoman.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'Retina';
   font-weight: 500;
   font-style: normal;
-  src: url('fonts/Retina-MediumRoman.eot'); /* IE9 Compat Modes */
-  src: url('fonts/Retina-MediumRoman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/Retina-MediumRoman.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Retina-MediumRoman.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/Retina-MediumRoman.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-
-/* Circular Standard — Webfont Load */
-
-@font-face {
-  font-family: 'CircularStd';
-  font-weight: 700;
-  font-style: normal;
-  src: url('fonts/circularstd-bold-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/circularstd-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/circularstd-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/circularstd-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/circularstd-bold-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-@font-face {
-  font-family: 'CircularStd';
-  font-weight: 400;
-  font-style: normal;
-  src: url('fonts/circularstd-book-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/circularstd-book-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/circularstd-book-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/circularstd-book-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/circularstd-book-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-@font-face {
-  font-family: 'CircularStd';
-  font-weight: 500;
-  font-style: normal;
-  src: url('fonts/circularstd-medium-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/circularstd-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/circularstd-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/circularstd-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/circularstd-medium-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('fonts/Retina-MediumRoman.eot');
+  src: url('fonts/Retina-MediumRoman.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Retina-MediumRoman.woff2') format('woff2'),
+       url('fonts/Retina-MediumRoman.woff') format('woff'),
+       url('fonts/Retina-MediumRoman.ttf')  format('truetype');
 }
