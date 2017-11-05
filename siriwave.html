@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Siri Experiment</title>
+		<style type="text/css" media="screen">
+			body {
+				background-color: #252525;
+			}
+			.container {
+				position: fixed;
+				display: block;
+				height: 500px;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				isolation: isolate;
+			}
+			.waveobject {
+				position: fixed;
+				background-color:0;
+				width: 100%;
+				height: 200%;
+				margin: auto;
+				margin-top: 550px;
+				border-radius: 100%;
+				mix-blend-mode: screen;
+				animation: pulse 2s infinite cubic-bezier(0.420, 0.000, 0.465, 1.000) both;
+				-webkit-animation-direction: alternate;
+				-webkit-transform: scale3d(0,0,0);
+			}
+			.waveobject:nth-of-type(1n) {
+				background-color: rgba(255,0,0,0.9);
+				animation-duration: 2s;
+			}
+			.waveobject:nth-of-type(2n) {
+				background-color: rgba(0,255,0,0.9);
+				animation-duration: 1.5s;
+			}
+			.waveobject:nth-of-type(3n) {
+				background-color: rgba(0,0,255,0.9);
+				animation-duration: 1.85s;
+			}
+			.waveobject:nth-of-type(4n) {
+				background-color: rgba(255,0,0,0.9);
+				animation-duration: 1.9s;
+			}
+			.waveobject:nth-of-type(5n) {
+				background-color: rgba(0,255,0,0.9);
+				animation-duration: 1.65s;
+			}
+			.waveobject:nth-of-type(6n) {
+				background-color: rgba(0,0,255,0.9);
+				animation-duration: 2.05s;
+			}
+			.waveobject:nth-of-type(7n) {
+				background-color: rgba(255,0,0,0.9);
+				animation-duration: 2.1s;
+			}
+			.waveobject:nth-of-type(8n) {
+				background-color: rgba(0,255,0,0.9);
+				animation-duration: 2.15s;
+			}
+			.waveobject:nth-of-type(9n) {
+				background-color: rgba(0,0,255,0.9);
+				animation-duration: 2.25s;
+			}
+/* 			----------- */
+
+			.waveobject:nth-of-type(3n+1) {
+				left: 80px;
+				margin-top: 550px;				
+			}
+			.waveobject:nth-of-type(4n+1) {
+				right: 60px;
+				margin-top: 450px;				
+			}
+			.waveobject:nth-of-type(7n) {
+				right: 40px;
+				margin-top: 490px;				
+			}
+			.waveobject:nth-of-type(8n) {
+				left: 40px;
+				margin-top: 550px;				
+			}
+			
+			@keyframes pulse {
+			0% {transform:scaleY(1.8) scaleX(0.9) translateY(80px); filter: blur(5px);}	
+			25% {transform:scaleY(1.1) scaleX(2) translateY(10px); filter: blur(20px);}	
+			50% {transform:scaleY(1.4) scaleX(1) translateY(50px); filter: blur(10px);}
+			100% {transform:scaleY(1.1) scaleX(2) translateY(10px); filter: blur(15px);}				
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+			<div class="waveobject"></div>
+		</div>
+	</body>
+</html>

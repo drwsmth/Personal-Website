@@ -2,19 +2,20 @@
 
 @import url('https://rsms.me/inter/inter-ui.css');
 
-.font\.tabular {
+.font_tabular {
     font-feature-settings: "tnum";
 }
-.font\.fractions {
+.font_fractions {
     font-feature-settings: "frac";
 }
-.font\.userint {
+.font_userint {
     font-feature-settings: "calt";
 }
-.font\.casealt {
+.font_casealt {
     font-feature-settings: "case";
 }
 html {
+	font-size: 1em;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
